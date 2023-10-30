@@ -3,10 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <title>Pre Entrega 1 - Alain Toledo</title>
 </head>
-<body>
+<body class="m-1 p-1 ">
     
+<h1>Productos Disponibles</h1>
+
+<table id="tabla_productos">
+    <thead> 
+        <tr>
+            <th>Producto</th>
+            <th>Valor</th>
+            <th>Accion</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+    <!-- <tr>
+        <td id="prod1Nom">Mouse</td>
+        <td id="prod1Val">$15.000</td>
+        <td><button>Agregar al carrito</button></td>
+    </tr>
+    <tr>
+        <td id="prod2Nom">Teclado</td>
+        <td id="prod2Val">$18.000</td>
+        <td><button>Agregar al carrito</button></td>
+    </tr>
+    <tr>
+        <td id="prod2Nom">Microfono</td>
+        <td id="prod2Val">$22.000</td>
+        <td><button>Agregar al carrito</button></td>
+    </tr>
+    <tr>
+        <td id="prod2Nom">Playstation 1</td>
+        <td id="prod2Val">$100.000</td>
+        <td><button>Agregar al carrito</button></td>
+    </tr> -->
+</table>
+</br>
+<h2>Carrito de compras</h2>
+<table id="tabla_carrito">
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Valor</th>
+            <th>Accion</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+
+
+</table>
+</br>
+<p id="neto"></p>
+<p id="iva"></p>
+<p id="total"></p>
+<button onclick="botonComprar()">Comprar</button>
+
 </body>
 <script src="./script.js"></script>
+<script src="./js/bootstrap.min.js"></script> 
 </html>
