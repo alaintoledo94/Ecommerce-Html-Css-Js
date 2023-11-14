@@ -170,7 +170,7 @@ function rellenarCarro() {
     nombreProducto.classList.add("item-compra");
 
     const valorProducto = document.createElement("li");
-    valorProducto.textContent = `$${producto.valorProd.toFixed(2)}`;
+    valorProducto.textContent = `$${(typeof producto.valorProd === 'number' ? producto.valorProd.toFixed(2) : 'N/A')}`;
     valorProducto.classList.add("item-compra");
 
     const cantidadProducto = document.createElement("li");
