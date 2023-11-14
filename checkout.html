@@ -1,42 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
     <title>Checkout</title>
 </head>
+
 <body>
-   
+
+<header>
     
-   
-        <form action="" class="mx-auto mt-5  text-center w-25 justify-content-center">
-            <label for="">Nombre</label>
-            <input type="text" id="checkoutNombre" class="form-control">
+  <div class="conti">
     
-            <label for="">Apellido</label>
-            <input type="text" id="checkoutApellido" class="form-control">
-    
-            <label for="">Rut(id)</label>
-            <input type="text" id="checkoutRut" class="form-control">
-    
-            <label for="">Telefono</label>
-            <input type="text" id="checkoutTelefono" class="form-control">
-    
-            <label for="">Direccion</label>
-            <input type="text" id="checkoutDireccion" class="form-control">
-        </form>
- 
+    <nav class="navbar bg-body-tertiary p-4 fw-bolder text-uppercase fixed-top cont ">
+      <div class="container-fluid  ">
+        <a class="navbar-brand " href="#">
+          <img src="https://cdn.worldvectorlogo.com/logos/nike-11.svg" alt="Logo" width="50" height="28"
+            class="d-inline-block align-text-top ">
+          HARDMike - Tienda Electronica
+        </a>
+
+      </div>
+    </nav>
+    </div>
+  
+</header>
 
 
-        <div class="text-center mt-3">
-            <button class="btn btn-primary text-center">Pagar</button>
-           <a href="index.html"><button  class="btn btn-primary text-center">Volver</button></a> 
+<div     class="d-flex justify-content-center border-2 rounded-5 contB">
+        <div class=" p-4 bg-body-secondary w-50 text-center rounded-4 shadow-sm">
+            <div class="d-flex justify-content-center text-center align-content-center ">
+                <img src="https://cdn.worldvectorlogo.com/logos/nike-11.svg" alt="Logo" width="100" height="48"
+                    class="">
+            </div>
+            <form action="" class="  mx-auto mt-5  text-center w-50 justify-content-center">
+                <label for="">Nombre</label>
+                <input type="text" id="checkoutNombre" class="form-control">
+
+                <label for="">Apellido</label>
+                <input type="text" id="checkoutApellido" class="form-control">
+
+                <label for="">Email</label>
+                <input type="email" id="checkoutRut" class="form-control">
+
+                <label for="">Telefono</label>
+                <input type="number" id="checkoutTelefono" class="form-control">
+
+                <label for="">Direccion</label>
+                <input type="text" id="checkoutDireccion" class="form-control">
+            </form>
+
+
+            <div class="text-center mt-3">
+                <button id="btnPagar" onclick="boleta() ,alertaComprar2()" class="btn btn-primary text-center">Pagar Pedido</button>
+                <a href="index.html"><button class="btn btn-primary text-center">Volver</button></a>
+            </div>
+
+
         </div>
-        
+    </div>
+        <div class="d-flex justify-content-center text-center mb-5 ">
+            <div id="cBoleta" class="boletaDetalle bg-body-secondary d-none w-50 mt-4 p-5 justify-content-center align-content-center rounded-4 shadow-sm">   
 
-   
+            
+
+            </div>
+        </div>
+
+
+
+<!-- ================================================================================== -->
+
+<footer class="bg-dark text-center text-white justify-content-center mt-5">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-twitter-x"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-linkedin"></i></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+      <div class="w">
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Registrate para conocer las novedades</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input type="email" id="form5Example2" placeholder="Ingresa Tu Email" class="form-control " />
+
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Suscribete
+                </button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </section>
+        <!-- Section: Form -->
+
+        <!-- Section: Text -->
+        <section class="mb-4">
+          <p>
+            En Mike Electrónica, estamos comprometidos a proporcionarte productos de alta calidad y un servicio excepcional. Nuestro equipo de expertos en tecnología está aquí para ayudarte a encontrar exactamente lo que necesitas, y siempre estamos al tanto de las últimas tendencias y avances en el mundo de la electrónica.</p>
+
+           <p> No importa si eres un entusiasta de la tecnología o simplemente necesitas una actualización en tus dispositivos electrónicos, en Mike Electrónica, tenemos todo lo que necesitas para mantenerte conectado y disfrutar de la última tecnología.
+          </p>
+        </section>
+        <!-- Section: Text -->
+
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row justify-content-center">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Enlaces</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Inicio</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Productos</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Preguntas Frecuentes</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Contacto</a>
+                </li>
+              </ul>
+            </div>
+
+
+
+
+
+
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-white" href="#">Alain Toledo G.</a>
+      </div>
+      <!-- Copyright -->
+  </footer>
+
 </body>
-<script src="script.js"></script>    
-<script src="./js/bootstrap.min.js"></script> 
+<script src="script.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </html>

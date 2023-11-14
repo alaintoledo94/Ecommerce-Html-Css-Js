@@ -1,71 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <title>Pre Entrega 1 - Alain Toledo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/estilos.css">
+  <title>Pre Entrega 1 - Alain Toledo</title>
 </head>
-<body class="m-1 p-1 ">
+
+<body>
+
+  <div class="conti">
     
-<h1>Productos Disponibles</h1>
+  <nav class="navbar bg-body-tertiary p-4 fw-bolder text-uppercase fixed-top cont ">
+    <div class="container-fluid  ">
+      <a class="navbar-brand " href="#">
+        <img src="https://cdn.worldvectorlogo.com/logos/nike-11.svg" alt="Logo" width="50" height="28"
+          class="d-inline-block align-text-top ">
+        HARDMike - Tienda Electronica
+      </a>
+      <div class="cursor-pointer conte">
+  <i class="bi bi-cart4  d-grid fs-4  carrito">
+    <!-- Contenido del carrito -->
+    <div class="buy-card">
+      <ul class="nav-card d-flex  p-3">
+        <li id="neto">Neto $</li>
+        <li id="iva">Iva $</li>
+        <li id="total">Total $</li>
+      </ul>
+    
+      
+    </div>
+  
+  </i>
+  
+</div>
+    </div>
+  </nav>
+  </div>
 
-<table id="tabla_productos">
-    <thead> 
-        <tr>
-            <th>Producto</th>
-            <th>Valor</th>
-            <th>Accion</th>
+  <!-- ------------------------------------------------------------------------------------------------- -->
+  <main>
+
+    <div id="carouselExampleCaptions" class="carousel slide  ">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/p1.png" class="d-block w-100 rounded-3" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Tarjetas Graficas</h5>
+            <p>Tarjetas grafias Nvidia y AMD.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/p2.png" class="d-block w-100 rounded-3" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Perifericos</h5>
+            <p>Mouse y Teclados gamer.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/p3.png" class="d-block w-100 rounded-3" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Consolas de ultima generacion</h5>
+            <p>Xbox, Playstation y Nintendo</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <h1 class="text-center fs-4 mt-5">Productos Disponibles</h1>
+
+
+    <div class="" id="card">
+
+      <div class="card-body " id="card-body">
+
+      </div>
+    </div>
+
+  </main>
+
+  <aside class="d-none justify-content-center ">
+    <h2 class="text-center fs-4 mt-3">Carrito de compras</h2>
+    <table class="text-center" id="tabla_carrito">
+      <thead>
+        <tr class="text-center">
+          <th>Producto</th>
+          <th>Valor</th>
+          <th>Cantidad</th>
+          <th>Accion</th>
+
         </tr>
-    </thead>
-    <tbody>
+      </thead>
+      <tbody>
 
-    </tbody>
-    <!-- <tr>
-        <td id="prod1Nom">Mouse</td>
-        <td id="prod1Val">$15.000</td>
-        <td><button>Agregar al carrito</button></td>
-    </tr>
-    <tr>
-        <td id="prod2Nom">Teclado</td>
-        <td id="prod2Val">$18.000</td>
-        <td><button>Agregar al carrito</button></td>
-    </tr>
-    <tr>
-        <td id="prod2Nom">Microfono</td>
-        <td id="prod2Val">$22.000</td>
-        <td><button>Agregar al carrito</button></td>
-    </tr>
-    <tr>
-        <td id="prod2Nom">Playstation 1</td>
-        <td id="prod2Val">$100.000</td>
-        <td><button>Agregar al carrito</button></td>
-    </tr> -->
-</table>
-</br>
-<h2>Carrito de compras</h2>
-<table id="tabla_carrito">
-    <thead>
-        <tr>
-            <th>Producto</th>
-            <th>Valor</th>
-            <th>Accion</th>
-           
-        </tr>
-    </thead>
-    <tbody>
-
-    </tbody>
+      </tbody>
 
 
-</table>
-</br>
-<p id="neto"></p>
-<p id="iva"></p>
-<p id="total"></p>
-<button onclick="botonComprar()">Comprar</button>
+    </table>
+    </br>
+
+    <button onclick="botonComprar()">Comprar</button>
+  </aside>
+  <!-- ------------------------------------------------------------------------------------------------- -->
+  <footer class="bg-dark text-center text-white justify-content-center mt-5">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-twitter-x"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-linkedin"></i></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+      <div class="w">
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Registrate para conocer las novedades</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input type="email" id="form5Example2" placeholder="Ingresa Tu Email" class="form-control " />
+
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Suscribete
+                </button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </section>
+        <!-- Section: Form -->
+
+        <!-- Section: Text -->
+        <section class="mb-4">
+          <p>
+            En Mike Electrónica, estamos comprometidos a proporcionarte productos de alta calidad y un servicio excepcional. Nuestro equipo de expertos en tecnología está aquí para ayudarte a encontrar exactamente lo que necesitas, y siempre estamos al tanto de las últimas tendencias y avances en el mundo de la electrónica.</p>
+
+           <p> No importa si eres un entusiasta de la tecnología o simplemente necesitas una actualización en tus dispositivos electrónicos, en Mike Electrónica, tenemos todo lo que necesitas para mantenerte conectado y disfrutar de la última tecnología.
+          </p>
+        </section>
+        <!-- Section: Text -->
+
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row justify-content-center">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Enlaces</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Inicio</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Productos</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Preguntas Frecuentes</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Contacto</a>
+                </li>
+              </ul>
+            </div>
+
+
+
+
+
+
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-white" href="#">Alain Toledo G.</a>
+      </div>
+      <!-- Copyright -->
+  </footer>
 
 </body>
 <script src="./script.js"></script>
-<script src="./js/bootstrap.min.js"></script> 
+<script src="./js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </html>

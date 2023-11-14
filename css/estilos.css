@@ -1,0 +1,115 @@
+.carrito {
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-card {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+
+  .nav-card li {
+    margin-right: 1rem;
+    font-weight: bold;
+  }
+
+  .conti{}
+
+
+
+.conti nav button{
+    display: none;
+}
+.buy-card {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 5px;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 400px; /* Agrega esta línea */
+  }
+
+  .conti nav i:hover  .nav-card {
+  font-style: normal;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  right: 50px;
+  border-bottom: solid thin #e1e1e1;
+}
+
+.conti nav i:hover .buy-card > button {
+  display: flex;
+  width: 90%;
+  padding: 2px;
+  margin: 10px auto;
+  background-color: transparent;
+  border: solid thin #e1e1e1;
+  color: #494848;
+  cursor: pointer;
+}
+.conti nav i:hover  .nav-card{
+    font-style: normal;
+    font-size:  10px;
+    display: flex;
+    justify-content: space-between;
+    right: 50px;
+    border-bottom: solid thin #e1e1e1;
+   
+}
+
+.conti nav i:hover .buy-card > button{
+    display:block;
+    width: 90%;
+    padding: 2px;
+    margin: 10px auto;
+    background-color: transparent;
+    border: solid thin #e1e1e1;
+    color: #494848;
+    cursor: pointer;
+}
+
+
+.buy-card {
+    display: none;
+   
+    top: 60px; 
+    right: 5px; 
+    background-color: #f8f9fa;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+  }
+  
+  .buy-card .nav-card {
+    font-style: normal;
+    padding: 0;
+    display: flex;
+  
+    
+    border-bottom: solid thin #e1e1e1;
+  }
+  
+ 
+  
+  .item-compra {
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+  .contB{
+  margin-top: 105px;
+  }
