@@ -434,8 +434,12 @@ function boleta() {
   boletaDetalle.appendChild(tituloElemento2);
 }
 
-function SumaValores(arrayCompra2) {
-  const sum = arrayCompra2.reduce((acumulador, elemento) => {
+function SumaValores(array) {
+  if (!array || array.length === 0) {
+    return 0;
+  }
+
+  const sum = array.reduce((acumulador, elemento) => {
     return acumulador + elemento.valorProd * elemento.cantidad;
   }, 0);
 
